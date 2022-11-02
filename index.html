@@ -7,20 +7,60 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.1.2/css/all.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Balthazar&family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap" rel="stylesheet">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
 
   <body>
 
+    <div class="banner">
+      <img src="images/eiffel-tower.png" id="eiffel-tower" alt="">
+      <img src="images/ratatouille.png" id="ratatouille" alt="">
+      <div class="title">
+        <img src="images/title-ellipse.png" alt="" id="yellow-ellipse">
+        <h1>LYDIA RATTO</h1>
+      </div>
+      <div id= profile></div>
+      <div class="intro-section">
+        <p>Hi, I'm Lydia! I'm studying at Le Wagon to become a Web Developer.</p>
+        <i><a href="https://www.lewagon.com/" target="_blank">Discover Le Wagon</a></i>
+      </div>
+    </div>
+
+
     <div class="container">
 
       <div class="card">
-        <h1>Hello, I'm Lydia</h1>
-        <img src="images/lydia.jpeg" alt="image of Lydia" id= profile>
-        <p>I'm studying at Le Wagon to become a Web Developer!</p>
-        <i><a href="https://www.lewagon.com/" target="_blank">Discover Le Wagon</a></i>
+        <h2>Languages 💬</h2>
+        <p>I enjoy learning new languages</p>
+
+        <div class="languages">
+
+          <div class="languages-type">
+            <p>Ruby</p>
+              <div class="progress-bar" id="pb1"></div>
+            <p>Html</p>
+              <div class="progress-bar" id="pb2"></div>
+            <p>CSS</p>
+                <div class="progress-bar" id="pb3"></div>
+            <p>Javascript</p>
+            <div class="progress-bar" id="pb4"></div>
+
+          </div>
+          <div class="languages-type">
+            <p>English</p>
+              <div class="progress-bar" class="progress-bar-filled" id="pb1"></div>
+            <p>Italian</p>
+              <div class="progress-bar" id="pb2"></div>
+            <p>French</p>
+                <div class="progress-bar" id="pb3"></div>
+            <p>Spanish</p>
+            <div class="progress-bar" id="pb4"></div>
+            <p>Japanese</p>
+              <div class="progress-bar" id="pb5"></div>
+          </div>
+        </div>
       </div>
 
       <div class="card">
@@ -31,6 +71,7 @@
         </ul>
       </div>
     </div>
+
   </body>
 
 </html>
