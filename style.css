@@ -1,121 +1,46 @@
+@import url('components/banner.css');
+@import url('components/cards.css');
+@import url('components/ingredients.css');
+@import url('components/footer.css');
+@import url('components/gif.css');
+
+
 body {
-  background-color: rgb(219, 217, 217);
+  background-color: white;
   font-family: 'DM Sans', sans-serif;
   font-family: 'Balthazar', serif;
   color: black;
   font-size: 20px;
   text-align: center;
+  cursor: url('images/cheese.png'), auto;
+  margin: 0;
 }
 
 .container {
   width: 1000px;
-  margin: 0 auto;
+  margin: 20px auto;
 }
 
 @media (max-width: 960px) {
-  .container {
+  body {
     width: 700px;
   }
 }
 
 @media (max-width: 720px) {
-  .container {
+  body {
     width: 500px;
   }
 }
 
 @media (max-width: 540px) {
-  .container {
+  body {
     width: 300px;
   }
 }
 
-.banner {
-  background-repeat: no-repeat;
-  background-size: cover;
-  margin: 0 auto;
-  background-image: linear-gradient(to bottom, rgb(192, 221, 248), white);
-  padding: 30px;
-}
-
-#eiffel-tower {
-  position: absolute;
-  width: 240px;
-  filter: blur(0.5px);
-  top: 20%;
-  left: 75%;
-}
-
-#ratatouille {
-  width: 120px;
-  position: absolute;
-  top: 27%;
-  left: 5%;
-  animation-name: move;
-  animation-duration: 4s;
-  animation-direction: reverse;
-  animation-delay: 0.1s;
-  animation-fill-mode: both;
-}
-
-@keyframes move {
-  from {transform: translateX(700px)}
-  to {transform: translateX(2000px)}
-
-}
-
-.title {
-  width: 500px;
-  height: 200px;
-  background-image: linear-gradient(to top right, rgb(22, 73, 201), rgb(43, 113, 219));
-  border-radius: 50%;
-  margin: 0 auto;
-}
-
-#yellow-ellipse {
-  size: 60%;
-}
-
-h1 {
-  color: rgb(255, 255, 255);
-  font-weight: bold;
-  font-size: 70px;
-  font-family: 'Balthazar', serif;
-  margin: 0 auto;
-  position: absolute;
-  top: 18%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-#profile {
-  background: url('images/lydia1.jpeg');
-  background-size: contain;
-  display: inline-block;
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;
-  margin-top: -40px;
-  transition: 0s background-image;
-
-}
-
-.intro-section {
-  padding: 15px;
-}
-
 p {
   font-family: 'DM Sans', sans-serif;
-}
-
-.card {
-  width: 600px;
-  margin: 30px auto;
-  background-color: white;
-  padding: 20px;
-  border: 3px solid rgb(255, 196, 0);
-  border-radius: 15px;
-  box-shadow: 1px 1px 2px lightgrey;
 }
 
 h2 {
@@ -129,53 +54,8 @@ a {
   font-family: 'DM Sans', sans-serif;
   text-decoration: none;
   color: rgb(255, 196, 0);
+  font-size: 30px;
 }
-
-.languages {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  margin: 0 auto;
-  padding: 10px;
-}
-
-.languages-type {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-}
-
-.lang-icon {
-  font-size: 35px;
-  width: 60px;
-}
-
-.lang-icon:hover span {
-  display: none;
-}
-
-.progress-bar {
-  border-radius: 4px;
-  height: 10px;
-  width: 100px;
-  background-color: beige;
-  /* animation: fill 3s forwards; */
-}
-
-.progress-bar-filled {
-  background-color: rgb(22, 73, 201);
-
-}
-
-.progress-bar-hover {
-
-}
-
-@keyframes fill {
-  0% {height: 0%;}
-  100% {height: 25%}
-}
-
 
 li {
   list-style: none;

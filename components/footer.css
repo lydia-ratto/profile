@@ -1,0 +1,16 @@
+.footer {
+  background-image: url('../images/ratatouille-background.png');
+  background-size: cover;
+  background-position: center;
+  height: 400px;
+  box-shadow: 0 0 50px 50px white inset;
+  padding-top: 30px;
+}
+
+.icons {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 0 auto;
+  width: 200px;
+  align-items: center;
+}
